@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Image is set in CSS -->
+
+    <!-- Logo and Header -->
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Voting System Logo" class="logo">
+        <h2>Welcome to Online Voting</h2>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="/register">Register</a>
+        <a href="/admin">Admin Login</a>
+        <a href="/vote">Vote</a>
+    </nav>
+    
+    <section class="container">
+        <h3>How It Works</h3>
+        <p>Register as a voter, capture your biometric data (Face & Fingerprint), and cast your vote securely!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Online Voting System. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to the external JavaScript files -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/webcam.js') }}"></script>
+</body>
+</html>

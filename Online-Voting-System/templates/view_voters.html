@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Voters</title>
+    <!-- Add any necessary CSS for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation bar or header -->
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('admin_dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('view_voters') }}">View Voters</a></li>
+            <li><a href="{{ url_for('view_results') }}">View Results</a></li>
+            <li><a href="{{ url_for('manage_voting') }}">Manage Voting</a></li>
+            <li><a href="{{ url_for('admin') }}">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>List of Voters</h1>
+
+        {% if voters %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Voter ID</th>
+                        <th>Aadhar ID</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for voter in voters %}
+                    <tr>
+                        <td>{{ voter[0] }}</td>
+                        <td>{{ voter[1] }}</td>
+                        <td>{{ voter[2] }}</td>
+                        <td>{{ voter[3] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No voters found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

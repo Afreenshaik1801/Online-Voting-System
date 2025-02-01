@@ -1,0 +1,2 @@
+from .face_recognition_model import capture_face
+from .fingerprint_recognition_model import capture_fingerprint

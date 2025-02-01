@@ -1,0 +1,5 @@
+SECRET_KEY = "voting_secret"
+DB_HOST = "localhost"
+DB_USER = "root"
+DB_PASSWORD = "1801"
+DB_NAME = "voting_system"

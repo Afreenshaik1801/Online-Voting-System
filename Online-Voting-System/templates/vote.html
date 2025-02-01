@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+</head>
+<body>
+    <h2>Enter Your Vote</h2>
+
+    <form action="{{ url_for('vote') }}" method="POST">
+        <label for="candidate">Select Party Candidate:</label><br><br>
+        {% for candidate in candidates %}
+            <input type="radio" id="{{ candidate[0] }}" name="candidate" value="{{ candidate[0] }}">
+            <label for="{{ candidate[0] }}">{{ candidate[0] }}</label><br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Submit Vote">
+    </form>
+
+    <br><br>
+    <a href="{{ url_for('home') }}">Go back to home</a>
+</body>
+</html>
