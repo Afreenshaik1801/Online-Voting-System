@@ -34,7 +34,7 @@ It includes:
 
 ### 1️⃣ Clone the Repository
 Clone this repository to your local machine using:
-git clone https://github.com/your-username/online-voting-system.git
+git clone https://github.com/Afreenshaik1801/Online-Voting-System
 
 ### 2️⃣ Install Required Libraries
 Navigate to the project directory and install dependencies:
