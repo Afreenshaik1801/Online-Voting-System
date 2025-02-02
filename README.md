@@ -1,6 +1,4 @@
-# Online Voting System
-
-## Online Voting System with Biometric Authentication
+# 🗳️ Online Voting System with Biometric Authentication
 This project is an **Online Voting System** that incorporates **Biometric Authentication** using face recognition and fingerprint scanning for secure user authentication.
 
 ---
