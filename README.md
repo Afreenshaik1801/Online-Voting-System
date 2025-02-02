@@ -38,28 +38,28 @@ It includes:
 Clone this repository to your local machine using:
 git clone https://github.com/your-username/online-voting-system.git
 
-2️⃣ Install Required Libraries
+### 2️⃣ Install Required Libraries
 Navigate to the project directory and install dependencies:
 pip install -r requirements.txt
 
-3️⃣ Set Up MySQL Database
+### 3️⃣ Set Up MySQL Database
 Ensure MySQL is installed on your system.
 Create a new database and tables based on database.py.
 Update the database credentials in config.py.
 
-4️⃣ Configure Flask App
+### 4️⃣ Configure Flask App
 In config.py, update:
 Database: Set MySQL username, password, and database name.
 Secret Key: Define a secure secret key for Flask sessions.
 
-5️⃣ Run the Application
+### 5️⃣ Run the Application
 Start the Flask server:
 python app.py
 
 The application will be available at:
 ➡️ http://127.0.0.1:5000
 
-Project Structure
+### Project Structure
 Online-Voting-System/
 │
 ├── app.py                   # Main Flask application
@@ -79,11 +79,11 @@ Online-Voting-System/
 ├── requirements.txt         # List of Python dependencies
 └── README.md                # Project overview and instructions
 
-Contributing
+### Contributing
 Feel free to fork this repository, make changes, and submit pull requests.
 If you encounter any issues, open an issue on GitHub.
 
-License
+### License
 📜 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
