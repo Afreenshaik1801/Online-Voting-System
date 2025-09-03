@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
-Online Voting System with Biometric Authentication 
+# Online Voting System with Biometric Authentication 
 
